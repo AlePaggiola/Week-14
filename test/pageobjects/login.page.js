@@ -11,7 +11,7 @@ class loginPage {
     return $('#password');
   }
 
-  get btnLogin() {
+  get bttnLogin() {
     return $('#login-button');
   }
 
@@ -26,8 +26,8 @@ class loginPage {
     await this.passwordInput.addValue(password);
   }
 
-  async btnLoginClick() {
-    await this.btnLogin.click();
+  async bttnLoginClick() {
+    await this.bttnLogin.click();
   }
 }
 

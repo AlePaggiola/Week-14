@@ -1,23 +1,23 @@
 class menuPage {
-  get menuBtn() {
+  get menuBttn() {
     return $('#react-burger-menu-btn');
   }
-  get menuCrossBtn() {
+  get menuCrossBttn() {
     return $('#react-burger-cross-btn');
   }
-  get allItemsBtn() {
+  get allItemsBttn() {
     return $('#inventory_sidebar_link');
   }
-  get aboutBtn() {
+  get aboutBttn() {
     return $('#about_sidebar_link');
   }
-  get logOutBtn() {
+  get logOutBttn() {
     return $('#logout_sidebar_link');
   }
-  get resetBtn() {
+  get resetBttn() {
     return $('#reset_sidebar_link');
   }
-  get sideBar() {
+  get sidebar() {
     return $('#menu_button_container > div > div.bm-menu-wrap > div.bm-menu');
   }
 }

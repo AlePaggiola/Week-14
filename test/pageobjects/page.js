@@ -3,7 +3,7 @@ class page {
     return $('#header_container > div.header_secondary_container > span');
   }
 
-  get correctImage() {
+  get rightImage() {
     return $('#item_4_img_link > img');
   }
 
