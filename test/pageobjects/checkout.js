@@ -1,4 +1,4 @@
-class checkout {
+class Checkout {
   get title() {
     return $('#checkout');
   }
@@ -59,4 +59,4 @@ class checkout {
   }
 }
 
-export default new checkout();
+export default new Checkout();

@@ -1,4 +1,4 @@
-class page {
+class Page {
   get welcomePage() {
     return $('#header_container > div.header_secondary_container > span');
   }
@@ -12,4 +12,4 @@ class page {
   }
 }
 
-export default new page();
+export default new Page();

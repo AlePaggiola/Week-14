@@ -1,22 +1,22 @@
-import loginPage from '../pageobjects/login.page.js';
+import LoginPage from '../pageobjects/login.page.js';
 
-describe('Login with unexpected and unauthorized users.', () => {
+describe('Login with unauthorized users.', () => {
   beforeAll('Open browser', () => {
     browser.setWindowSize(1920, 1080);
     browser.url('https://www.saucedemo.com');
   });
 
   it('Verify login process of locked out user login process.', async () => {
-    await expect(loginPage.loginLogo).toBeDisplayed();
-    await expect(loginPage.userNameInput).toBeDisplayed();
-    await expect(loginPage.passwordInput).toBeDisplayed();
-    await loginPage.login('locked_out_user', 'secret_sauce');
-    await loginPage.bttnLoginClick();
+    await expect(LoginPage.loginLogo).toBeDisplayed();
+    await expect(LoginPage.userNameInput).toBeDisplayed();
+    await expect(LoginPage.passwordInput).toBeDisplayed();
+    await LoginPage.login('locked_out_user', 'secret_sauce');
+    await LoginPage.bttnLoginClick();
   });
 
   it('Verify error message.', async () => {
-    await expect(loginPage.errorMessage).toBeDisplayed();
-    await expect(loginPage.errorMessage).toHaveTextContaining(
+    await expect(LoginPage.errorMessage).toBeDisplayed();
+    await expect(LoginPage.errorMessage).toHaveTextContaining(
       'Epic sadface: Sorry, this user has been locked out.',
     );
     await browser.pause(2000);

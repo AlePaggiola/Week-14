@@ -1,4 +1,4 @@
-class menuPage {
+class MenuPage {
   get menuBttn() {
     return $('#react-burger-menu-btn');
   }
@@ -22,4 +22,4 @@ class menuPage {
   }
 }
 
-export default new menuPage();
+export default new MenuPage();

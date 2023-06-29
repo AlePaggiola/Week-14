@@ -1,4 +1,4 @@
-class footer {
+class Footer {
   get twitter() {
     return $('#page_wrapper > footer > ul > li.social_twitter > a');
   }
@@ -12,4 +12,4 @@ class footer {
   }
 }
 
-export default new footer();
+export default new Footer();

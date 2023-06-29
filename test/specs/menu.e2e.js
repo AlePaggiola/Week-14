@@ -1,5 +1,5 @@
-import loginPage from '../pageobjects/login.page.js';
-import menuPage from '../pageobjects/menu.js';
+import LoginPage from '../pageobjects/login.page.js';
+import MenuPage from '../pageobjects/menu.js';
 
 describe('Accessing the webpage.', () => {
   beforeAll('Open browser', () => {
@@ -8,19 +8,19 @@ describe('Accessing the webpage.', () => {
   });
 
   it('Successfully login process.', async () => {
-    await loginPage.login('standard_user', 'secret_sauce');
-    await loginPage.bttnLoginClick();
+    await LoginPage.login('standard_user', 'secret_sauce');
+    await LoginPage.bttnLoginClick();
   });
 
   it('Checking Sidebar page and the log-out.', async () => {
     await browser.pause(3000);
-    await menuPage.menuBttn.click();
+    await MenuPage.menuBttn.click();
     await browser.pause(2000);
-    await expect(menuPage.sidebar).toBeDisplayed();
-    await expect(menuPage.menuCrossBttn).toBeDisplayed();
-    await expect(menuPage.allItemsBttn).toBeDisplayed();
-    await expect(menuPage.aboutBttn).toBeDisplayed();
-    await expect(menuPage.resetBttn).toBeDisplayed();
-    await menuPage.logOutBttn.click();
+    await expect(MenuPage.sidebar).toBeDisplayed();
+    await expect(MenuPage.menuCrossBttn).toBeDisplayed();
+    await expect(MenuPage.allItemsBttn).toBeDisplayed();
+    await expect(MenuPage.aboutBttn).toBeDisplayed();
+    await expect(MenuPage.resetBttn).toBeDisplayed();
+    await MenuPage.logOutBttn.click();
   });
 });
