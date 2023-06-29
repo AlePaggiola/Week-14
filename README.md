@@ -32,7 +32,23 @@ Download the project from this repository.
 Open a terminal within the project's folder.
 Run the command "npm install" in the terminal to install all the dependencies specified in the package.json file.
 Run "code ." to open the project in Visual Studio Code or use your preferred code editor.
+
+- Install WebDriverIO by running the following command: 'npm install webdio'
+- You are going to select that the tests run in 'local host'
+- Select 'N' for the question of mobile testing
+- Select 'Jasmine' for framework
+- Select 'N' for compiler
+- Select 'Y' for autogenerate some test files
+- Select 'Y' for use of page object
+- Select 'Alurre' for the report
+- Select 'Wait-for' for the question of add pluggin to the setup
+- Select 'ChromeDriver' for service question
+- Press enter for the using of 'Localhost' as url
+- Select 'Y' for the run of npm install
+
 You are now ready to execute the tests!
+
+Initialize a new Node.js project by getting the following command: 'npm init -y'
 
 ---
 
@@ -40,7 +56,7 @@ You are now ready to execute the tests!
 
 To deploy and execute this project, use the following command in the terminal:
 
-<sub> npx wdio </sub>
+- npx wdio
 
 ---
 
